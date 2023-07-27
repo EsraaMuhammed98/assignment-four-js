@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <main  >
+        <section id="mainForm" class="p-5 m-auto">
+            <h1 class="text-center">Smart Login System</h1>
+            <form>
+                <input id="nameInput" type="text" class="form-control" name="fName" placeholder="Enter your name">
+                <input id="email" type="email" class="form-control" oninput="emailWarningFunc()" name="email" placeholder="Enter your email">
+                <p class="alert alert-danger d-none" id="emailWarning" > "Please insert a valid email address."</p>
+                <input id="password" autocomplete="current-password" type="password" class="form-control" name="password" placeholder="Enter your password">
+                <p id="existe-email" class=" text-danger text-center fs-8 pb-3 d-none">email already exists</p>
+                <p class=" hint-error text-danger text-center fs-8 pb-3 d-none">All inputs is required</p>
+                <p class="hint-success  text-success text-center fs-8 pb-3 d-none ">Success</p>
+                <button type="submit" onclick="signupValidation()" class="btn btn-outline-info w-100 submit-btn"> Sign Up</button>
+          <p class=" text-center text-white pt-3">You have an account?  <a class="text-white" id='signupAnchor'href="./signin.html">Sign in</a></p>
+        
+       
+        </form>
+        </section>
+    </main>
+
+
+
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="./js/index.js"></script>
+</body>
+</html>
